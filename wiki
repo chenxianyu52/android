@@ -1,0 +1,7 @@
+ADB from platform-tools 28.0.2 can now be safely used with the emulator. If you are experiencing issues with "unauthorized" emulators:
+
+Exit all emulators
+Delete ~/.android/adbkey and ~/.android/adbkey.pub
+adb kill-server
+adb devices Wipe data of AVD
+Relaunch emulator
